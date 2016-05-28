@@ -1,7 +1,7 @@
 # falcon.string_literal
-High level constexpr interface to the string literals.
 
-Similar to std::string_view.
+High level constexpr interface similar to string_view for literal strings.
+
 
 ``` cpp
 using namespace falcon::make_string_literal_shortcut;

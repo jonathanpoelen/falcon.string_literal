@@ -27,8 +27,8 @@ before_build:
 
 build_script:
  - cd c:\projects\string_literal\build
- - msbuild /target:all_tests /p:Configuration=Debug;Platform=x64 string_literal.sln
- - msbuild /target:all_tests /p:Configuration=Release;Platform=x64 string_literal.sln
+ - msbuild /target:all /p:Configuration=Debug;Platform=x64 string_literal.sln
+ - msbuild /target:all /p:Configuration=Release;Platform=x64 string_literal.sln
 
 test_script:
  - cd c:\projects\string_literal\build
