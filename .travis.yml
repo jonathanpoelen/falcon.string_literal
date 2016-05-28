@@ -1,6 +1,5 @@
 sudo: false
 language: cpp
-dist: trusty
 
 # More complete test matrix
 matrix:

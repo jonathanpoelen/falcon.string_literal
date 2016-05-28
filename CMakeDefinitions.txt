@@ -1,4 +1,4 @@
-if (NOT "${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
+if (NOT CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
   add_definitions(
     -Wall
     -Wextra
@@ -38,12 +38,12 @@ if (NOT "${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
 #    -Wfatal-errors
   )
 
-  if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+  if (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     add_definitions(
       -Wno-mismatched-tags
       -Warray-bounds
     )
-  elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+  elseif (CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(
       -Wtrampolines
       -Wdouble-promotion

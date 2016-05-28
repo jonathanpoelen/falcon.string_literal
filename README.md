@@ -3,6 +3,16 @@
 High level constexpr interface similar to string_view for literal strings.
 
 
+build | compiler (Ubuntu 16.04 (Xenial Xerus))
+---|---
+ok | g++-5.3 >=
+ok | clang-3.5 >=
+
+build | compiler
+---|---
+fail | msvc 14.0.25123.0
+
+
 ``` cpp
 using namespace falcon::make_string_literal_shortcut;
 
